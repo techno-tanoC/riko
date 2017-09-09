@@ -3,12 +3,12 @@
     .alert.alert-danger
       p Oops, something went wrong! Please check the errors below.
 
-  .form-group
+  .input-field
     = label f, :title, class: "control-label"
     = text_input f, :title, class: "form-control"
     = error_tag f, :title
 
-  .form-group
+  .input-field
     = label f, :url, class: "control-label"
     = text_input f, :url, class: "form-control"
     = error_tag f, :url
