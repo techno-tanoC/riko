@@ -9,6 +9,7 @@ defmodule Riko.Mixfile do
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
       start_permanent: Mix.env == :prod,
+      preferred_cli_env: [espec: :test],
       aliases: aliases(),
       deps: deps()
     ]
@@ -43,6 +44,7 @@ defmodule Riko.Mixfile do
       {:cowboy, "~> 1.0"},
       {:sqlite_ecto2, "~> 2.2"},
       {:phoenix_slime, "~> 0.8.0"},
+      {:espec_phoenix, "~> 0.6.9", only: :test},
     ]
   end
 

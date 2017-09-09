@@ -12,4 +12,5 @@ config :logger, level: :warn
 # Configure your database
 config :riko, Riko.Repo,
   adapter: Sqlite.Ecto2,
+  pool: Ecto.Adapters.SQL.Sandbox,
   database: "test.db"
