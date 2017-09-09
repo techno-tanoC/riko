@@ -1,0 +1,19 @@
+h2 Listing Items
+
+table.table
+  thead
+    tr
+      th Title
+      th Url
+      th
+  tbody
+    = for item <- @items do
+      tr
+      td= item.title
+      td= item.url
+      td.text-right
+        span= link "Show", to: item_path(@conn, :show, item), class: "btn btn-default btn-xs"
+        span= link "Edit", to: item_path(@conn, :edit, item), class: "btn btn-default btn-xs"
+        span= link "Delete", to: item_path(@conn, :delete, item), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs"
+
+span= link "New Item", to: item_path(@conn, :new)

@@ -1,0 +1,12 @@
+h2 Show Item
+
+ul
+  li
+    strong Title:
+    = @item.title
+  li
+    strong Url:
+    = @item.url
+
+span= link "Edit", to: item_path(@conn, :edit, @item)
+span= link "Back", to: item_path(@conn, :index)
