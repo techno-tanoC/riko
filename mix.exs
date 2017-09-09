@@ -42,6 +42,7 @@ defmodule Riko.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:sqlite_ecto2, "~> 2.2"},
+      {:phoenix_slime, "~> 0.8.0"},
     ]
   end
 
