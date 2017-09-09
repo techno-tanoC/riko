@@ -11,9 +11,5 @@ config :logger, level: :warn
 
 # Configure your database
 config :riko, Riko.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "riko_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  adapter: Sqlite.Ecto2,
+  database: "test.db"

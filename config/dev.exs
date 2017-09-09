@@ -50,9 +50,5 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :riko, Riko.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "riko_dev",
-  hostname: "localhost",
-  pool_size: 10
+  adapter: Sqlite.Ecto2,
+  database: "dev.db"

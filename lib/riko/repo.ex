@@ -1,5 +1,5 @@
 defmodule Riko.Repo do
-  use Ecto.Repo, otp_app: :riko
+  use Ecto.Repo, otp_app: :riko, adapter: Sqlite.Ecto2
 
   @doc """
   Dynamically loads the repository url from the
