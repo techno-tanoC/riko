@@ -1,1 +1,13 @@
-/* This file is for your main application css. */
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+
+  .contents {
+    margin: 15px auto;
+    max-width: 800px;
+  }
+}
